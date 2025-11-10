@@ -1,4 +1,14 @@
+@use 'foundation' as *;
+
 html {
+  //Root font 1rem = 16px; default
+
+  font-size: 62.5%; //new default // 1rem = 10px
+  // Calculation => 10/16 = 62.5%
+  //  1rem = 9px, 9/16 = 56.25%
+  // 1rem = 8px, 8/16 = 50%
+  // 1rem = 14px, 14/16 = 87.5%
+
   box-sizing: border-box;
 }
 

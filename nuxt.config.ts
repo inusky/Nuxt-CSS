@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  css: ['./app/assets/scss/main.scss'],
   app: {
     head: {
       title: 'Nuxt CSS',
@@ -17,12 +18,7 @@ export default defineNuxtConfig({
   vite: {
     css: {
       devSourcemap: true,
-      preprocessorOptions: {
-        scss: {
-          additionalData: '@use "@/assets/scss/_foundation.scss" as *;',
-        },
-      },
     },
   },
   sourcemap: true,
-})
+});
