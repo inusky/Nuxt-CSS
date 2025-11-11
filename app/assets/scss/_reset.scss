@@ -1,11 +1,11 @@
 @use 'foundation' as *;
 
 html {
-  //Root font 1rem = 16px; default
+  // Root font 1rem = 16px; default
 
-  font-size: 62.5%; //new default // 1rem = 10px
+  font-size: 62.5%; // New default // 1rem = 10px
   // Calculation => 10/16 = 62.5%
-  //  1rem = 9px, 9/16 = 56.25%
+  // 1rem = 9px, 9/16 = 56.25%
   // 1rem = 8px, 8/16 = 50%
   // 1rem = 14px, 14/16 = 87.5%
 
@@ -18,4 +18,20 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 80%;
+  font-family: $contentFont;
+  background-color: $app-BG;
+  line-height: 1.6;
+  font-size: 1.7rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $titleFont;
 }
